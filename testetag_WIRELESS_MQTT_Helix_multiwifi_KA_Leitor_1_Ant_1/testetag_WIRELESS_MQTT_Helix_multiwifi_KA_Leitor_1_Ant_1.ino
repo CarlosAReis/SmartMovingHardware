@@ -17,13 +17,13 @@
 //**************************************
 //*********** MQTT CONFIG **************
 //**************************************
-const char *mqtt_server = "52.14.171.32";  ///helix ip
-const int mqtt_port = 1883;//1883,1026,4041
-const char *mqtt_user = "NnB7tFj8KgQdkjg";
-const char *mqtt_pass = "KoTg3FGuYMMwSxW";
-const char *root_topic_subscribe = "qkk2sNHLWr2MFm6/input";// "qkk2sNHLWr2MFm6/input"
-const char *root_topic_publish = "SM_IdProj_Hub_001";
-const char *root_topic_publish01 = "SM_IdProj_KA_001";
+const char *mqtt_server = "IPDOHELIX";  ///helix ip
+const int mqtt_port = "PORTA DE ACESSO";//1883,1026,4041
+//const char *mqtt_user = "NnB7tFj8KgQdkjg"; usado nos testes ioticos
+//const char *mqtt_pass = "KoTg3FGuYMMwSxW"; usado nos testes ioticos
+//const char *root_topic_subscribe = "qkk2sNHLWr2MFm6/input";// "qkk2sNHLWr2MFm6/input" usado nso testes ioticos
+const char *root_topic_publish = "TOPICO TAG RFID"; // TOPICO ONDE PUBLICAR a TAG
+const char *root_topic_publish01 = "TOPICO KEEP ALIVE"; // TOPICO KEEP ALIVE
 const char* dispositivoID = "LEITOR_001";// id do dispositivo 
 String DispID = "LEITOR_001";
 String leituraTAG = " ";
@@ -32,11 +32,11 @@ String Novaleitura = " ";
 //**************************************
 //*********** WIFICONFIG ***************
 //**************************************
-const char* ssid = "Violetas"; //suarede
-const char* password = "reis151293";//suasenha
-const char* ssid1 = "XiaomiA3car"; //suarede
-const char* ssid2 = "MotorolaOneXD"; //suarede
-const char* password2 = "a71d5afaf3e3";//suasenha
+const char* ssid = "SUA REDE 1"; //suarede
+const char* password = "Senha da rede 1";//suasenha
+const char* ssid1 = "Sua rede 2"; //suarede
+const char* ssid2 = "Sua rede 3"; //suarede
+const char* password2 = "Senha rede 3";//suasenha
 
 WiFiMulti wifiMulti;
 
